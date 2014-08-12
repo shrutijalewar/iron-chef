@@ -1,5 +1,6 @@
 ## name of project
 ### Code Badges
+[![Build Status](https://travis-ci.org/shrutijalewar/iron-chef.svg)](https://travis-ci.org/shrutijalewar/iron-chef)
 build status icon
 coverage status icon
 
@@ -34,8 +35,7 @@ $ npm install
 $ npm test
 ```
 
-### Contributors
-- [Chyld Medford](https://github.com/chyld)
+
 
 ### License
 [MIT](LICENSE)
