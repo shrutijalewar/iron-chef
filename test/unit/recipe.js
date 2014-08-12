@@ -4,12 +4,12 @@
 'use strict';
 
 var expect    = require('chai').expect,
-    Person    = require('../../app/models/person'),
+    Recipe    = require('../../app/models/recipe'),
     dbConnect = require('../../app/lib/mongodb'),
     cp        = require('child_process'),
-    db        = 'template-test';
+    db        = 'ironChef-test';
 
-describe('Person', function(){
+describe('Recipe', function(){
   before(function(done){
     dbConnect(db, function(){
       done();
@@ -23,16 +23,19 @@ describe('Person', function(){
   });
 
   describe('constructor', function(){
-    it('should create a new Person object', function(){
-      var p = new Person();
-      expect(p).to.be.instanceof(Person);
+    it('should create a new recipe object', function(){
+      var r = new Recipe();
+      expect(r).to.be.instanceof(Recipe);
+
     });
   });
 
   describe('.all', function(){
-    it('should get all people', function(done){
-      Person.all(function(err, people){
-        expect(people).to.have.length(2);
+    it('should get all recipes', function(done){
+      Recipe.all(function(err, recipes){
+        console.log(recipes);
+       // expect(recipes[0]).to.be.instanceof(Recipe);
+        expect(recipes).to.have.length(5);
         done();
       });
     });

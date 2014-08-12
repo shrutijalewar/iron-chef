@@ -1,7 +1,20 @@
 extends ../shared/template
 block content
-  h2 Home Page!
-
+  h2 Recipes
+  #controls
+    #visibility
+      button#hide Hide Form
+      button#show Show Form
+    form(method='post', action='/recipes')
+      input(name='name', type='text', placeholder='cake', autofocus=true)
+      input(name='photo', type='text', placeholder='Image URL')
+      input(name='ingredients', type='text', placeholder='flour,butter')
+      textarea(name='directions')
+      button Add
+  #recipes
+    each recipe in recipes
+      include recipe
+block scripts 
 block scripts
   script(src='/js/user/home.js')
 
