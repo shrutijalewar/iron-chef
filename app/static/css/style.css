@@ -1,8 +1,7 @@
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
+@import url(http://fonts.googleapis.com/css?family=Play);
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Play', sans-serif;
   font-size : 15px;
   margin: 0px;
   padding: 0px;
@@ -12,13 +11,18 @@ margin: 10px;
 }
 body{
   background-color:gray;
+  font-family: 'Play', sans-serif;
 }
 #controls{
 text-align: center;
 }
 body  h1{
   font-size: 100px;
+  font-family: 'Play', sans-serif;
   text-align: center;
+}
+#categories{
+  margin-right: 10px;
 }
 
 .recipe{
@@ -53,6 +57,18 @@ body  h1{
 .recipe .ingredients li{
   position: relative;
   left: 20px;
+}
+
+.category {
+color: red;
+position: relative;
+left: 20px;
+}
+#categories li{
+display: inline-block;
+margin: 10px;
+padding: 5px;
+color: red;
 }
 
 .recipe .photo button{

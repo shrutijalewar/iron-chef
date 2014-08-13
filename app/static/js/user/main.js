@@ -7,12 +7,24 @@
     $('form').submit(addRecipe);
     $('#recipes').on('click', '.delete', delRecipe);
     $('#categories a').click(filterCategory);
+    $('#recipes').on('click', '.ingredients a', filterIngredient);
   });
+
+  function filterIngredient(e){
+    var ingredient = $(this).text();
+    $('.recipe a:not(:contains('+ingredient+'))').closest('.recipe').hide();
+    $('.recipe a:contains('+ingredient+')').closest('.recipe').show();
+    e.preventDefault();
+  }
 
   function filterCategory(e){
     var category = $(this).text();
-    $('.recipe .category:contains('+category+')').closest('.recipe').fadeIn();
-    $('.recipe .category:not(:contains('+category+'))').closest('.recipe').fadeOut();
+    if(category !== 'All'){
+      $('.recipe .category:contains('+category+')').closest('.recipe').fadeIn();
+      $('.recipe .category:not(:contains('+category+'))').closest('.recipe').fadeOut();
+    }else{
+      $('.recipe').show();
+    }
     e.preventDefault();
   }
 
@@ -24,7 +36,7 @@
       var $recipe = $('.recipe[data-recipe-id='+data.id+']');
       $recipe.fadeOut();
 
-     //setTimeout(function()$recipe.)
+      setTimeout(function(){$recipe.remove();}, 2000);
     }});
   }
   function addRecipe(e){
