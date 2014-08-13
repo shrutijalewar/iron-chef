@@ -1,20 +1,33 @@
 extends ../shared/template
 block content
-  h2 Recipes
   #controls
     #visibility
-      button#hide Hide Form
-      button#show Show Form
+      button.red#hide Hide Form
+      button.red.shift#show Show Form
     form(method='post', action='/recipes')
+      select(name='category')
+        option Dessert
+        option Pig out
+        option Breakfast
+        option Dinner
+        option Lunch
       input(name='name', type='text', placeholder='cake', autofocus=true)
       input(name='photo', type='text', placeholder='Image URL')
       input(name='ingredients', type='text', placeholder='flour,butter')
       textarea(name='directions')
-      button Add
+      button.pink Add Recipe to the Page
+
+  ul#categories
+    li: a(href='#') Breakfast
+    li: a(href='#') Lunch
+    li: a(href='#') Dinner
+    li: a(href='#') Dessert
+    li: a(href='#') Pig Out
+
   #recipes
     each recipe in recipes
       include recipe
-block scripts 
+block scripts
 block scripts
   script(src='/js/user/home.js')
 

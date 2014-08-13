@@ -11,4 +11,9 @@ exports.create = function(req, res){
     res.render('home/recipe',{recipe:recipe});
   });
 };
+exports.removeById = function(req, res){
+  Recipe.removeById(req.params.id, function(){
+    res.send({id:req.params.id});
+  });
+};
 

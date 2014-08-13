@@ -1,26 +1,29 @@
 
-rt url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 *{
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size : 15px;
   margin: 0px;
   padding: 0px;
 }
-
+.red.shift{
+margin: 10px;
+}
 body{
   background-color:gray;
 }
-
-header{
-  margin: 20px;
+#controls{
+text-align: center;
 }
-
-header h1{
-  font-size: 25px;
+body  h1{
+  font-size: 100px;
+  text-align: center;
 }
 
 .recipe{
+  position: relative;
+  vertical-align: top;
   display: inline-block;
   width: 250px;
   border: 1px solid #111111;
@@ -30,6 +33,7 @@ header h1{
 }
 
 .recipe .photo{
+  position: relative;
   height: 300px;
   background-size: cover;
   border-bottom: 1px solid #111111;
@@ -51,7 +55,14 @@ header h1{
   left: 20px;
 }
 
+.recipe .photo button{
+position: absolute;
+right: 10px;
+top: 10px;
+}
+
 form{
+text-align: center;
 display: inline-block;
 padding: 10px;
 border: 1px solid;
@@ -60,4 +71,6 @@ margin: 20px;
 form input, form button, form textarea{
 display: block;
 width: 350px;
+padding: 1px;
+
 }

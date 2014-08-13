@@ -1,6 +1,7 @@
 {
   "_id":{"$oid":"000000000000000000000001"},
   "name":"cranberry cake",
+  "Date":{"$date":477295200000},
   "photo":"http://www.recipe.com/images/sweet-potato-cranberry-cake-R123418-ss.jpg",
   "ingredients":["flour", "baking powder","sugar","cranberries","eggs","butter", "vanilla essence"],
   "directions":["Grease and lightly flour a 10-inch fluted tube pan; set aside. In a large bowl, combine flour, baking powder, set aside.", "In a very large bowl beat in eggs, butter and vanilla until well combined. Beat in sugar. Add flour mixture, beating until combined. Fold in cranberries.","Transfer the batter into the prepared tube pan. ","Bake in a 350 degrees oven for 55 to 65 minutes.","If you like, sift powdered sugar over cake just before serving."]
@@ -8,6 +9,7 @@
 {
   "_id":{"$oid":"000000000000000000000002"},
   "name":"banana cake",
+  "Date":{"$date":477296200000},
   "photo":"http://www.recipe.com/images/sweet-potato-cranberry-cake-R123418-ss.jpg",
   "ingredients":["flour", "baking powder","sugar","banana","eggs","butter", "vanilla essence"],
   "directions":["Grease and lightly flour a 10-inch fluted tube pan; set aside. In a large bowl, combine flour, baking powder, set aside.", "In a very large bowl beat in eggs, butter and vanilla until well combined. Beat in sugar. Add flour mixture, beating until combined. Fold in banana.","Transfer the batter into the prepared tube pan. ","Bake in a 350 degrees oven for 55 to 65 minutes.","If you like, sift powdered sugar over cake just before serving."]
@@ -15,13 +17,15 @@
 {
   "_id":{"$oid":"000000000000000000000003"},
   "name":"choclate cake",
+  "Date":{"$date":477297200000},
   "photo":"http://www.recipe.com/images/sweet-potato-cranberry-cake-R123418-ss.jpg",
   "ingredients":["flour", "baking powder","sugar","choclate","eggs","butter", "vanilla essence"],
   "directions":["Grease and lightly flour a 10-inch fluted tube pan; set aside. In a large bowl, combine flour, baking powder, set aside.", "In a very large bowl beat in eggs, butter and vanilla until well combined. Beat in sugar. Add flour mixture, beating until combined. Fold in choclate.","Transfer the batter into the prepared tube pan. ","Bake in a 350 degrees oven for 55 to 65 minutes.","If you like, sift powdered sugar over cake just before serving."]
 }
 {
   "_id":{"$oid":"000000000000000000000004"},
-  "name":"strwberry cake",
+  "name":"strawberry cake",
+  "Date":{"$date":477298200000},
   "photo":"http://www.recipe.com/images/sweet-potato-cranberry-cake-R123418-ss.jpg",
   "ingredients":["flour", "baking powder","sugar","strawberries","eggs","butter", "vanilla essence"],
   "directions":["Grease and lightly flour a 10-inch fluted tube pan; set aside. In a large bowl, combine flour, baking powder, set aside.", "In a very large bowl beat in eggs, butter and vanilla until well combined. Beat in sugar. Add flour mixture, beating until combined. Fold in strawberry.","Transfer the batter into the prepared tube pan. ","Bake in a 350 degrees oven for 55 to 65 minutes.","If you like, sift powdered sugar over cake just before serving."]
@@ -29,6 +33,7 @@
 {
   "_id":{"$oid":"000000000000000000000005"},
   "name":"pumpkin cake",
+  "Date":{"$date":477299200000},
   "photo":"http://www.recipe.com/images/sweet-potato-cranberry-cake-R123418-ss.jpg",
   "ingredients":["flour", "baking powder","sugar","pumpkin","eggs","butter", "vanilla essence"],
   "directions":["Grease and lightly flour a 10-inch fluted tube pan; set aside. In a large bowl, combine flour, baking powder, set aside.", "In a very large bowl beat in eggs, butter and vanilla until well combined. Beat in sugar. Add flour mixture, beating until combined. Fold in pumpkin.","Transfer the batter into the prepared tube pan. ","Bake in a 350 degrees oven for 55 to 65 minutes.","If you like, sift powdered sugar over cake just before serving."]
